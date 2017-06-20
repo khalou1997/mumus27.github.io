@@ -1,0 +1,41 @@
+.container{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.header{
+	background: #018901;
+	color:white;
+	padding: 10px;
+}
+.header h2{
+	font-style: normal;
+}
+.h2{
+	background-color: #009900;
+	color: white;
+	padding: 10px;
+	margin: 0;
+}
+#div{
+	text-transform: capitalize;
+	padding: 10px;
+	font-size: 25px;
+}
+#button{
+	padding: 25px 60px;
+	display: block;
+	margin: auto;
+	font-size: 20px;
+}
+#input{
+	margin: 20px;
+	padding: 20px 50px;
+	height: 60px;
+	font-size: 25px;
+}
+.footer{
+	background-color: #018901;
+
+	height: 150px
+}
