@@ -2,7 +2,7 @@ $("#div").on('click', '#button', function(e) {
     find()
 })
 
-$("#div").on('keydown', '#input', function(e) {
+$("#div").on('keydown', 'input', function(e) {
     var keyCode = e.keyCode || e.which;
 
     if (keyCode == 13) {
