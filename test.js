@@ -10,7 +10,7 @@
 {matricule:"X150295",Name:"BENMEDDOUR IMANE",moyenne:10.05},
 {matricule:"X150355",Name:"BOUCHENEB AMIRA",moyenne:10.30},
 {matricule:"X130226",Name:"BOUHALOUANE ROUFAIDA",moyenne:10.11},
-{matricule:"X140192",Name:"BOUHEZILA AMIRA",moyenne:10.25},
+{matricule:"X140192",Name:"BOUHEZILA AMIRA",moyenne:8.25},
 {matricule:"X140280",Name:"BOUKENNA KHAOULA",moyenne:10.03},
 {matricule:"X130405",Name:"CHAOU MANAL",moyenne:10.17},
 {matricule:"X100117",Name:"CHELBI BILLAL",moyenne:10.10},
@@ -52,23 +52,29 @@
 
 function allert(acqui,name,moy){
 	if(acqui){
-		alert("mabrouk "+name+" votre anne est acquise\n\n\n"+"votre moyenne est : "+moy);
+		alert("Nom et Prénom : "+name+"\n\n\nMoyenne :"+moy+"\n\n\n"+"Observation : Admis(e)");
 	}else {
-		alert("ccha7 "+name+" votre anne n'est pas acquise\n\n\n"+"votre moyenne est : "+moy);
+		alert("Nom et Prénom : "+name+"\n\n\nMoyenne :"+moy+"\n\n\n"+"Observation : Ajourné(e)");
+
 	}
 }
 
 function find(){
 	    matricule = $('#input').val();
 	for (var i = 0; i < jsonData.length; i++) {
-			
+			var is = false;
 			if (jsonData[i].matricule === matricule){
 				name = jsonData[i].Name
 				moy = jsonData[i].moyenne
 				var acqui = false
+				is = true;
 				if (moy>=10)acqui = true;
 				allert(acqui,name,moy)
+				break;
 			}
+		}
+		if(!is){
+
 		}
 }
 
