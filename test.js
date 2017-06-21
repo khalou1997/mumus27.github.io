@@ -1,5 +1,4 @@
 $("#div").on('click', '#button', function(e) {
-    // e.preventDefault(); 
     find()
 })
 
@@ -17,17 +16,17 @@ function allert(acqui, name, moy) {
         alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Admis(e)");
     } else {
         alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Ajourné(e)");
-
     }
 }
 
 function find() {
-    matricule = $('#input').val().toUpperCase();
+    var nom = $('#Nom').val().toUpperCase();
+    var Prenom = $('#Prenom').val().toUpperCase();
+    var Name = nom +"  "+Prenom
 
-    console.log(matricule)
     for (var i = 0; i < jsonData.length; i++) {
         var is = false;
-        if (jsonData[i].matricule === matricule) {
+        if (jsonData[i].Name.toUpperCase() === Name) {
             name = jsonData[i].Name
             moy = jsonData[i].moyenne
             var acqui = false
