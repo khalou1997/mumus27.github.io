@@ -74,7 +74,9 @@ function find(){
 			}
 		}
 		if(!is){
-
+		
+			$("#err").fadeIn(400)
+ 
 		}
 }
 

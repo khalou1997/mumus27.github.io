@@ -1,10 +1,16 @@
+body{
+	background:rgb(236,240,241)
+}
 .container{
 	width: 80%;
 	margin: auto;
 	text-align: center;
+	border:1px solid  #ddd;
+	background-color: white;
 }
 .header{
-	background: #018901;
+	background: rgb(39,174,96);
+	/*;*/
 	color:white;
 	padding: 10px;
 }
@@ -12,7 +18,7 @@
 	font-style: normal;
 }
 .h2{
-	background-color: #009900;
+	background-color: rgb(46,204,113);
 	color: white;
 	padding: 10px;
 	margin: 0;
@@ -29,13 +35,25 @@
 	font-size: 20px;
 }
 #input{
-	margin: 20px;
+	margin: 20px auto;
 	padding: 20px 50px;
-	height: 60px;
+	height:3rem;
 	font-size: 25px;
 }
 .footer{
-	background-color: #018901;
+	background-color: rgb(39,174,96);
+	color: white;
+	padding: 60px 0 10px;
+	border-top:1px solid  #ddd;
+	/*height: 150px*/
+}
 
-	height: 150px
+.err{
+	padding: 10px;
+	background-color: rgba(231,76,60,0.7);
+	border-radius: 0.5rem;
+	border:1px solid #ddd;
+	color: rgb(44,62,80);
+	margin: 15px 0;
+	display: none;
 }
