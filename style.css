@@ -118,3 +118,6 @@ body{
             transform: translateX(-8px);
   }
 }
+span{
+	text-decoration: line-through;
+}
