@@ -58,12 +58,9 @@ body{
 }
 
 .err{
-	padding: 10px;
 	background-color: rgba(231,76,60,0.7);
-	border-radius: 0.5rem;
 	border:1px solid #ddd;
 	color: rgb(44,62,80);
-	margin: 15px 0;
 	display: none;
 }
 @-webkit-keyframes shake-horizontal {
