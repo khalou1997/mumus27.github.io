@@ -2,7 +2,7 @@ $("#div").on('click', '#button', function(e) {
     find()
 })
 
-$("#div").on('keydown', '#Prenom', function(e) {
+$("#div").on('keydown', 'input', function(e) {
     var keyCode = e.keyCode || e.which;
 
     if (keyCode == 13) {
@@ -10,35 +10,33 @@ $("#div").on('keydown', '#Prenom', function(e) {
         find()
     }
 });
-
-function allert(acqui, name, moy) {
-    if (acqui) {
-        alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Admis(e)");
-    } else {
-        alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Ajourné(e)");
-    }
-}
-
 function find() {
     var nom = $('#Nom').val().toUpperCase();
     var Prenom = $('#Prenom').val().toUpperCase();
     var Name = nom +"  "+Prenom
 
-    for (var i = 0; i < jsonData.length; i++) {
+    for (var id = 0; id < jsonData.length; id++) {
         var is = false;
-        if (jsonData[i].Name.toUpperCase() === Name) {
-            name = jsonData[i].Name
-            moy = jsonData[i].moyenne
+        if (jsonData[id].Name.toUpperCase() === Name) {
+            name = jsonData[id].Name
+            moy = jsonData[id].moyenne
             var acqui = false
             is = true;
             if (moy >= 10) acqui = true;
-            allert(acqui, name, moy)
-            window.location.reload();
+            allert(acqui, name, moy,id);
+            // window.location.reload();
             break;
         }
     }
     if (!is) {
 
         $("#err").fadeIn(400)
+    }
+}
+function allert(acqui, name, moy,id) {
+    if (acqui) {
+        alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Admis(e)"+"\n\n\n"+"Classment : " + (1+id));
+    } else {
+        alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Ajourné(e)"+"\n\n\n"+"Classment : " + (1+id));
     }
 }
