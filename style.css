@@ -1,5 +1,6 @@
 body{
 	background:rgba(236,240,241,0.2)
+	font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -11,9 +12,10 @@ body{
 }
 .header{
 	background: rgb(39,174,96);
-	/*;*/
+	line-height: 1;
 	color:white;
 	padding:5px;
+	font-family: 'Cairo', sans-serif;
 }
 .header h2{
 	font-style: normal;
