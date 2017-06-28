@@ -24,7 +24,7 @@ function find() {
             is = true;
             if (moy >= 10) acqui = true;
             allert(acqui, name, moy,id);
-            window.location.reload();
+            // window.location.reload();
             break;
         }
     }

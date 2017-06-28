@@ -1,6 +1,7 @@
 body{
-	background:rgba(236,240,241,0.5);
-	font-family: 'Roboto', sans-serif;
+	background:rgba(236,240,241,0.2);
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .container{
@@ -15,7 +16,8 @@ body{
 	line-height: 1;
 	color:white;
 	padding:5px;
-	font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo', sans-serif;
+
 }
 .header h2{
 	font-style: normal;
@@ -41,10 +43,9 @@ body{
 }
 .input{
 	margin: 10px auto;
-	padding: 0 0 0 15px;
-	height:4rem;
-	font-size: 30px;
-	width : 60%;
+	padding: 20px 50px;
+	height:1.8rem;
+	font-size: 35px;
 
 }
 .footer{
@@ -60,9 +61,12 @@ body{
 }
 
 .err{
+	padding: 10px;
 	background-color: rgba(231,76,60,0.7);
+	border-radius: 0.5rem;
 	border:1px solid #ddd;
 	color: rgb(44,62,80);
+	margin: 15px 0;
 	display: none;
 }
 @-webkit-keyframes shake-horizontal {
