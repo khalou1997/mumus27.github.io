@@ -37,6 +37,6 @@ function allert(acqui, name, moy,id) {
     if (acqui) {
         alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Admis(e)"+"\n\n\n"+"Classment : " + (1+id));
     } else {
-        alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Ajourné(e)"+"\n\n\n"+"Classment : " + (1+id));
+        alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Ajourné(e)");
     }
 }
