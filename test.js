@@ -13,7 +13,7 @@ $("#div").on('keydown', 'input', function(e) {
 function find() {
     var nom = $('#Nom').val().toUpperCase();
     var Prenom = $('#Prenom').val().toUpperCase();
-    var Name = nom +"  "+Prenom
+    var Name = nom +" "+Prenom
 
     for (var id = 0; id < jsonData.length; id++) {
         var is = false;
@@ -37,6 +37,6 @@ function allert(acqui, name, moy,id) {
     if (acqui) {
         alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Admis(e)"+"\n\n\n"+"Classment : " + (1+id));
     } else {
-        alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Ajourné(e)");
+        alert("Nom et Prénom : " + name + "\n\n\nMoyenne : " + moy + "\n\n\n" + "Observation : Ajourné(e)"+"\n\n\n"+"Classment : " + (1+id));
     }
 }
